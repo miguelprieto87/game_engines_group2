@@ -8,5 +8,5 @@ public class ItemSO : ScriptableObject
 {
     public string itemName;
 
-    public Image itemImage;
+    public Sprite itemImage;
 }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ItemManager : MonoBehaviour
 {
@@ -12,6 +13,15 @@ public class ItemManager : MonoBehaviour
     public List<ItemSO> weaponList;
     public List<ItemSO> shieldList;
     public List<ItemSO> ringList;
+
+    public Image helmetIcon;
+    public Image torsoIcon;
+    public Image glovesIcon;
+    public Image leggingsIcon;
+    public Image bootsIcon;
+    public Image weaponIcon;
+    public Image shieldIcon;
+    public Image ringIcon;
 
     public GameObject inventoryPanel;
 
