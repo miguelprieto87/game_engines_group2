@@ -25,4 +25,9 @@ public class ItemManager : MonoBehaviour
     {
         inventoryPanel.SetActive(true);
     }
+
+    public void ExitInventory()
+    {
+        inventoryPanel.SetActive(false);
+    }
 }
