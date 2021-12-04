@@ -4,15 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class ItemManager : MonoBehaviour
-{
-    public List<ItemSO> helmetList;
-    public List<ItemSO> torsoList;
-    public List<ItemSO> glovesList;
-    public List<ItemSO> leggingsList;
-    public List<ItemSO> bootsList;
-    public List<ItemSO> weaponList;
-    public List<ItemSO> shieldList;
-    public List<ItemSO> ringList;
+{ 
 
     public Image helmetIcon;
     public Image torsoIcon;
