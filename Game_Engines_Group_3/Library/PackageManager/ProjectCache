@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637740786667502049
-    m_Hash: 726070672
+      ticks: 637743263278493381
+    m_Hash: 1807772058
   m_LockFileStatus:
     m_FilePath: C:/Users/block/Documents/GitHub/game_engines_group2/Game_Engines_Group_3/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637740786917348494
-    m_Hash: 3708424618
+      ticks: 637743263278543394
+    m_Hash: 1500975056
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -625,12 +625,12 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
-    - packageId: com.unity.collab-proxy@1.7.1
+    - packageId: com.unity.collab-proxy@1.15.4
       testable: 0
       isDirectDependency: 1
-      version: 1.7.1
+      version: 1.15.4
       source: 1
-      resolvedPath: C:\Users\block\Documents\GitHub\game_engines_group2\Game_Engines_Group_3\Library\PackageCache\com.unity.collab-proxy@1.7.1
+      resolvedPath: C:\Users\block\Documents\GitHub\game_engines_group2\Game_Engines_Group_3\Library\PackageCache\com.unity.collab-proxy@1.15.4
       assetPath: Packages/com.unity.collab-proxy
       name: com.unity.collab-proxy
       displayName: Version Control
@@ -715,9 +715,15 @@ m_PackageAssets:
       dependencies:
       - name: com.unity.nuget.newtonsoft-json
         version: 2.0.0
+      - name: com.unity.services.core
+        version: 1.0.1
       resolvedDependencies:
       - name: com.unity.nuget.newtonsoft-json
         version: 2.0.0
+      - name: com.unity.services.core
+        version: 1.0.1
+      - name: com.unity.modules.unitywebrequest
+        version: 1.0.0
       keywords:
       - backup
       - cloud
@@ -744,13 +750,13 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637616921650000000
+      datePublishedTicks: 637726568460000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/com.unity.cloud.collaborate.git
-        revision: 30ef59f552633de9ff0401db4e73ac89982d4ac0
+        revision: 1275603954ad33bee601fe2c9a3c787b3d4e4c6b
         path: 
     - packageId: com.unity.ide.rider@2.0.7
       testable: 0
@@ -3355,6 +3361,71 @@ m_PackageAssets:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/com.unity.nuget.newtonsoft-json.git
         revision: d2fd6ed876261bbd82f59199ad711e7667bf633a
+        path: 
+    - packageId: com.unity.services.core@1.0.1
+      testable: 0
+      isDirectDependency: 0
+      version: 1.0.1
+      source: 1
+      resolvedPath: C:\Users\block\Documents\GitHub\game_engines_group2\Game_Engines_Group_3\Library\PackageCache\com.unity.services.core@1.0.1
+      assetPath: Packages/com.unity.services.core
+      name: com.unity.services.core
+      displayName: Services Core
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: 'This package defines common components used by multiple Game
+        Service packages.
+
+        These are standardized and aim to unify the overall
+        experience of working with Game Services packages.'
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 1.0.1
+        - 1.1.0-pre.7
+        - 1.1.0-pre.8
+        - 1.1.0-pre.9
+        - 1.1.0-pre.10
+        - 1.1.0-pre.11
+        compatible:
+        - 1.0.1
+        - 1.1.0-pre.7
+        - 1.1.0-pre.8
+        - 1.1.0-pre.9
+        - 1.1.0-pre.10
+        - 1.1.0-pre.11
+        verified: 
+      dependencies:
+      - name: com.unity.modules.unitywebrequest
+        version: 1.0.0
+      resolvedDependencies:
+      - name: com.unity.modules.unitywebrequest
+        version: 1.0.0
+      keywords: []
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637604883250000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git
+        revision: 4cd880d4fd5c60597629249bf4f324e4c8d7aa2e
         path: 
     - packageId: com.unity.mathematics@1.1.0
       testable: 0

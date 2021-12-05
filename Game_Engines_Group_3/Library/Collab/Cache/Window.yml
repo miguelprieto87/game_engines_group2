@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffe70aba2e7074048aca5de573b64a59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SimpleSelectedItems:
+    m_Keys:
+    - Assets/Art.meta
+    - Assets/Prefabs.meta
+    - Assets/Prefabs/PNL_Item.prefab
+    - Assets/Prefabs/PNL_Item.prefab.meta
+    - Assets/Scenes.meta
+    - Assets/Scenes/SampleScene.unity
+    - Assets/Scenes/SampleScene.unity.meta
+    - Assets/Scriptable Objects.meta
+    - Assets/Scriptable Objects/Helmets.meta
+    - Assets/Scriptable Objects/Helmets/Barbarian's Helmet.asset
+    - Assets/Scriptable Objects/Helmets/Barbarian's Helmet.asset.meta
+    - Assets/Scriptable Objects/Helmets/Black Knight's Helmet.asset
+    - Assets/Scriptable Objects/Helmets/Black Knight's Helmet.asset.meta
+    - Assets/Scriptable Objects/Helmets/Golden Helmet.asset
+    - Assets/Scriptable Objects/Helmets/Golden Helmet.asset.meta
+    - Assets/Scriptable Objects/Helmets/Silver Helmet.asset
+    - Assets/Scriptable Objects/Helmets/Silver Helmet.asset.meta
+    - Assets/Scriptable Objects/Weapons.meta
+    - Assets/Scriptable Objects/Weapons/Axe.asset
+    - Assets/Scriptable Objects/Weapons/Axe.asset.meta
+    - Assets/Scriptable Objects/Weapons/Bow.asset
+    - Assets/Scriptable Objects/Weapons/Bow.asset.meta
+    - Assets/Scriptable Objects/Weapons/Greatsword.asset
+    - Assets/Scriptable Objects/Weapons/Greatsword.asset.meta
+    - Assets/Scriptable Objects/Weapons/Short Sword.asset
+    - Assets/Scriptable Objects/Weapons/Short Sword.asset.meta
+    - Assets/Scriptable Objects/Weapons/Spear.asset
+    - Assets/Scriptable Objects/Weapons/Spear.asset.meta
+    - Assets/Scripts.meta
+    - Assets/Scripts/CheckButton.cs
+    - Assets/Scripts/CheckButton.cs.meta
+    - Assets/Scripts/ItemController.cs
+    - Assets/Scripts/ItemController.cs.meta
+    - Assets/Scripts/ItemManager.cs
+    - Assets/Scripts/ItemManager.cs.meta
+    - Assets/Scripts/ItemSO.cs
+    - Assets/Scripts/ItemSO.cs.meta
+    - Assets/Scripts/PanelPopulator.cs
+    - Assets/Scripts/PanelPopulator.cs.meta
+    - 
+    m_Values: 01010101010101010101010101010101010101010101010101010101010101010101010101010101
+  RevisionSummary: 
+  ChangesSearchValue: 
+  SelectedHistoryRevision: 
+  HistoryPageNumber: 0
+  TabIndex: 0
