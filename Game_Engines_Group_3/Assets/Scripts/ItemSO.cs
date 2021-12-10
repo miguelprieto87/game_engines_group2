@@ -7,7 +7,8 @@ using UnityEngine.UI;
 public class ItemSO : ScriptableObject
 {
     //Creates scriptable object that holds a name and a Sprite representing it
+    public int id;
     public string itemName;
-
-    public Sprite itemImage;
+    public Sprite itemImage;    
+    public int type;
 }

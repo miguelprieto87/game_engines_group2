@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0939f78610a289c40aa6926b74713fba, type: 3}
   m_Name: Silver Helmet
   m_EditorClassIdentifier: 
+  id: 9
   itemName: Silver Helmet
-  itemImage: {fileID: 0}
+  itemImage: {fileID: 21300000, guid: 5bd01e1d2b705bd47ab7299d974861e0, type: 3}
+  type: 3

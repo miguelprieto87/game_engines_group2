@@ -16,6 +16,8 @@ public class ItemManager : MonoBehaviour
     public Image shieldIcon;
     public Image ringIcon;
 
+    public List<Image> imageContainers;
+
     //This is the inventory panel that will open and close 
     public GameObject inventoryPanel;
 
@@ -34,7 +36,18 @@ public class ItemManager : MonoBehaviour
 
     public void ExitInventory()
     {
+        ClearHolders();
         //When the close button on the inventory panel is selected (Or when an item is selected) the inventory panel will close
         inventoryPanel.SetActive(false);
+    }
+
+    public void ClearHolders() 
+    {
+        int pos=0;
+        for (int i=0; i < imageContainers.Count;i++) 
+        {
+            imageContainers[pos].sprite = null;
+            pos++;
+        }
     }
 }
