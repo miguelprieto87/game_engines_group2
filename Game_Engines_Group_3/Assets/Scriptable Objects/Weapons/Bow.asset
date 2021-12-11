@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 31
   itemName: Bow
-  itemImage: {fileID: 0}
+  itemImage: {fileID: 21300000, guid: 0d3dd6ea0632c394e8fd2d222f543394, type: 3}
   type: 7

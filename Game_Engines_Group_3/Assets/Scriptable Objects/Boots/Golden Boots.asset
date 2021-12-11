@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 6
   itemName: Golden Boots
-  itemImage: {fileID: 0}
+  itemImage: {fileID: 21300000, guid: bdcdb268ead93f14c80e0181ee43d8ba, type: 3}
   type: 2
