@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 18
   itemName: Red Ring
-  itemImage: {fileID: 0}
+  itemImage: {fileID: 21300000, guid: 3a73b7fb6a57d9a4d9633a44d4b99763, type: 3}
   type: 5

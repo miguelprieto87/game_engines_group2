@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 14
   itemName: Golden Leggings
-  itemImage: {fileID: 0}
+  itemImage: {fileID: 21300000, guid: e1da9dc886779d0458aac494d9cc9328, type: 3}
   type: 4

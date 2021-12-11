@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 23
   itemName: Steel Shield
-  itemImage: {fileID: 0}
+  itemImage: {fileID: 21300000, guid: 1e84927e285864c45ac535742d855c00, type: 3}
   type: 6

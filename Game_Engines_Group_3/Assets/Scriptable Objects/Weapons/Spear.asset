@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 28
   itemName: Spear
-  itemImage: {fileID: 0}
+  itemImage: {fileID: 21300000, guid: 9444f391a17a4f04a9f78dd7686e1b57, type: 3}
   type: 7
