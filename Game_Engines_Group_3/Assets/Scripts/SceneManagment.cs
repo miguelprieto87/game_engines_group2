@@ -6,9 +6,9 @@ using UnityEngine.SceneManagement;
 public class SceneManagment : MonoBehaviour
 {
 
-    public void playGame()
+    public void playGame(string level)
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(level);
     }
 
     public void quitGame()
