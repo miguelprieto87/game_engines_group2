@@ -5,8 +5,9 @@ using UnityEngine.UI;
 
 public class PanelPopulator : MonoBehaviour
 {
-    //public GameObject itemPrefab; //The prefab holding the data for each of the items 
-    //public Transform myContainer; //The container where all of the itemPrefabs will appear within the inventory panel
+    public GameObject inventoryLinePrefab; //The prefab holding the data for a maximun of 4 elements
+    public GameObject itemHolderPrefab; //The prefab holding the data for a single element
+    public Transform myContainer; //The container where all of the itemPrefabs will appear within the inventory panel
 
     public GameObject itemsOb;
 
@@ -22,7 +23,71 @@ public class PanelPopulator : MonoBehaviour
         //itemsSo = this.GetComponent<ItemController>().itemsSo;      
     }
 
-    public void PopulateContent(int op)
+   
+
+    public void Message() 
+    {
+        Debug.Log("Message");
+    }
+
+
+    
+
+    public void populateInventory(int op)
+    {
+       
+        try
+        {
+            DeleteChildren();
+            foreach (ItemSO itSo in itemsOb.GetComponent<ItemController>().itemsSo)//foreach (ItemSO itSo in itemsSo)
+            {
+                if (itSo.type == op) 
+                {
+                    createItemHolder(myContainer,itSo);               
+                }
+
+            }
+
+        }
+        catch (System.Exception)
+        {
+
+            throw;
+        }       
+                
+    }
+
+
+
+    void createItemHolder(Transform parent, ItemSO itemSO)
+    {
+        GameObject myPrefabItem = Instantiate(itemHolderPrefab, parent.transform);
+        myPrefabItem.GetComponent<Image>().sprite = itemSO.itemImage;
+    }
+
+    public void DeleteChildren() 
+    {
+        int count = myContainer.childCount;
+        //myContainer.GetChild();
+        if (count!=0) 
+        {
+            for (int i = 0; i < count; i++)
+            {
+                Destroy(myContainer.GetChild(i).gameObject);
+            }
+        }
+        
+        //Debug.Log("childrens: "+ count );
+
+        
+    }
+   
+}
+
+
+/*trash code
+ * 
+ *  public void PopulateContent(int op)
     {
         try
         {
@@ -62,11 +127,59 @@ public class PanelPopulator : MonoBehaviour
         //    //tempController.itemImage = items.helmetList[i].itemImage;
         //}
     }
-
-    public void Message() 
+ * 
+ * public void SetLevelInventory(int op) 
     {
-        Debug.Log("Message");
+        createLevelInventory(op);
+    }
+ * 
+    GameObject createSubLevel() 
+    {
+        GameObject myPrefabLine = Instantiate(inventoryLinePrefab, myContainer);
+        return myPrefabLine;
     }
 
-   // public void myDataCreation
-}
+ //int pos = 0;
+            //GameObject subLevel = createSubLevel();
+            //int lvlLine=0;
+            //bool sw = false;
+ * //GameObject myPrefabLine = Instantiate(inventoryLinePrefab, myContainer);
+
+
+        //GameObject myPrefabItem = Instantiate(itemHolderPrefab, myPrefabLine.transform);
+        //GameObject myPrefabItem2 = Instantiate(itemHolderPrefab, myPrefabLine.transform);
+        //GameObject myPrefabItem3 = Instantiate(itemHolderPrefab, myPrefabLine.transform);
+        //GameObject myPrefabItem4 = Instantiate(itemHolderPrefab, myPrefabLine.transform);
+ * 
+ * 
+ *  if (itSo.type == op)
+                {
+                    if (lvlLine == 4)
+                    {
+                        sw = true;
+                        lvlLine = 0;
+                    }
+
+                    if (sw == true)
+                    {
+                        subLevel = createSubLevel();
+                        createItemHolder(subLevel,itSo);
+                        sw = false;
+                        lvlLine++;
+                    }
+                    else
+                    {
+                        createItemHolder(subLevel, itSo);
+                        lvlLine++;
+                    }
+                    
+
+
+                    Debug.Log("id: " + itSo.id.ToString());
+                    Debug.Log("pos:" + pos);
+                    //imageContainers[pos].sprite = itSo.itemImage;
+                    pos++;
+                }
+ 
+ 
+ */
