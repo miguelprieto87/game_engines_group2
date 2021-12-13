@@ -6,12 +6,12 @@ using UnityEngine.SceneManagement;
 public class SceneManagment : MonoBehaviour
 {
 
-    public void playGame(string level)
+    public void LoadScene(int level)
     {
         SceneManager.LoadScene(level);
     }
 
-    public void quitGame()
+    public void QuitGame()
     {
         Application.Quit();
     }

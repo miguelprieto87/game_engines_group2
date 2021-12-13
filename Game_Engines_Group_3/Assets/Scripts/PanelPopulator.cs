@@ -5,16 +5,16 @@ using UnityEngine.UI;
 
 public class PanelPopulator : MonoBehaviour
 {
-    public GameObject inventoryLinePrefab; //The prefab holding the data for a maximun of 4 elements
+    //public GameObject inventoryLinePrefab; //The prefab holding the data for a maximun of 4 elements
     public GameObject itemHolderPrefab; //The prefab holding the data for a single element
     public Transform myContainer; //The container where all of the itemPrefabs will appear within the inventory panel
 
     public GameObject itemsOb;
 
     //ItemController items;
-    public List<ItemSO> itemsSo;
+    //public List<ItemSO> itemsSo;
 
-    public List<Image> imageContainers;
+    //public List<Image> imageContainers;
     
 
     // Start is called before the first frame update
@@ -22,8 +22,12 @@ public class PanelPopulator : MonoBehaviour
     {
         //itemsSo = this.GetComponent<ItemController>().itemsSo;      
     }
+    private void Awake()
+    {
+        populateAllInvetory();
+    }
 
-   
+
 
     public void Message() 
     {
@@ -31,7 +35,24 @@ public class PanelPopulator : MonoBehaviour
     }
 
 
-    
+
+    public void populateAllInvetory() 
+    {
+        try
+        {
+            DeleteChildren();
+            foreach (ItemSO itSo in itemsOb.GetComponent<ItemController>().itemsSo)//foreach (ItemSO itSo in itemsSo)
+            {
+                createItemHolder(myContainer, itSo);
+            }               
+
+        }
+        catch (System.Exception)
+        {
+
+            throw;
+        }
+    }
 
     public void populateInventory(int op)
     {
@@ -63,6 +84,7 @@ public class PanelPopulator : MonoBehaviour
     {
         GameObject myPrefabItem = Instantiate(itemHolderPrefab, parent.transform);
         myPrefabItem.GetComponent<Image>().sprite = itemSO.itemImage;
+        myPrefabItem.GetComponent<ItemManager>().itemSO = itemSO;
     }
 
     public void DeleteChildren() 
@@ -80,6 +102,17 @@ public class PanelPopulator : MonoBehaviour
         //Debug.Log("childrens: "+ count );
 
         
+    }
+
+    public void ShowPlayerPrefs() 
+    {
+        Debug.Log(PlayerPrefs.GetInt("armour").ToString());
+        Debug.Log(PlayerPrefs.GetInt("boots").ToString());
+        Debug.Log(PlayerPrefs.GetInt("helmet").ToString());
+        Debug.Log(PlayerPrefs.GetInt("leggins").ToString());
+        Debug.Log(PlayerPrefs.GetInt("ring").ToString());
+        Debug.Log(PlayerPrefs.GetInt("shield").ToString());
+        Debug.Log(PlayerPrefs.GetInt("weapon").ToString());
     }
    
 }

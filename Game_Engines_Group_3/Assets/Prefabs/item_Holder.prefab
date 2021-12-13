@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5975924590368074788}
   - component: {fileID: 5975924590368074789}
   - component: {fileID: 5975924590368074790}
+  - component: {fileID: 7365102059032468778}
   m_Layer: 5
   m_Name: item_Holder
   m_TagString: Untagged
@@ -140,4 +141,36 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5975924590368074788}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7365102059032468778}
+        m_TargetAssemblyTypeName: ItemManager, Assembly-CSharp
+        m_MethodName: setImageToCharacter
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &7365102059032468778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5975924590368074784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d109ddfd7aa25e49b6a790c317c18f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  helmetIcon: {fileID: 0}
+  torsoIcon: {fileID: 0}
+  leggingsIcon: {fileID: 0}
+  bootsIcon: {fileID: 0}
+  weaponIcon: {fileID: 0}
+  shieldIcon: {fileID: 0}
+  ringIcon: {fileID: 0}
+  itemSO: {fileID: 0}

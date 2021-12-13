@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - helmet
+  - armour
+  - leggins
+  - weapon
+  - boots
+  - ring
+  - shield
   layers:
   - Default
   - TransparentFX

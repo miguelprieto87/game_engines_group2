@@ -1084,7 +1084,7 @@ GameObject:
   - component: {fileID: 575025688}
   m_Layer: 5
   m_Name: LeggingsImage
-  m_TagString: Untagged
+  m_TagString: leggins
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1105,8 +1105,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.5, y: -61.2}
-  m_SizeDelta: {x: 61.2969, y: 119.499}
+  m_AnchoredPosition: {x: -40.33328, y: -89.59633}
+  m_SizeDelta: {x: 104.9348, y: 174.4571}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &575025688
 MonoBehaviour:
@@ -1238,7 +1238,7 @@ GameObject:
   - component: {fileID: 581995818}
   m_Layer: 5
   m_Name: HelmetImage
-  m_TagString: Untagged
+  m_TagString: helmet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1259,8 +1259,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2, y: 108.73934}
-  m_SizeDelta: {x: 39.3178, y: 46.1882}
+  m_AnchoredPosition: {x: -39.47728, y: 158.49884}
+  m_SizeDelta: {x: 67.3085, y: 67.4303}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &581995818
 MonoBehaviour:
@@ -1920,7 +1920,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1662017194}
         m_TargetAssemblyTypeName: PanelPopulator, Assembly-CSharp
-        m_MethodName: DeleteChildren
+        m_MethodName: ShowPlayerPrefs
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2128,7 +2128,7 @@ GameObject:
   - component: {fileID: 856912594}
   m_Layer: 5
   m_Name: WeaponImage
-  m_TagString: Untagged
+  m_TagString: weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2149,8 +2149,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 112.587}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.978485, y: 39.899994}
-  m_SizeDelta: {x: 46.14, y: 115.4171}
+  m_AnchoredPosition: {x: -19, y: 58}
+  m_SizeDelta: {x: 67.36, y: 197.5838}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &856912594
 MonoBehaviour:
@@ -3908,7 +3908,7 @@ GameObject:
   - component: {fileID: 1409327034}
   m_Layer: 5
   m_Name: ShieldImage
-  m_TagString: Untagged
+  m_TagString: shield
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3929,8 +3929,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -17.9, y: -12.4}
-  m_SizeDelta: {x: 59.0512, y: 59.0512}
+  m_AnchoredPosition: {x: -73.54428, y: -18.352932}
+  m_SizeDelta: {x: 101.0904, y: 86.2091}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1409327034
 MonoBehaviour:
@@ -4004,8 +4004,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.1526, y: 102.45}
-  m_SizeDelta: {x: 33.3219, y: 43.4085}
+  m_AnchoredPosition: {x: -39.216053, y: 149.317}
+  m_SizeDelta: {x: 57.0441, y: 63.3722}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1414614775
 MonoBehaviour:
@@ -4374,10 +4374,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1508517319}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3637182224311bc46bdfacd0f1dd9f07, type: 3}
+  m_Script: {fileID: 11500000, guid: 0baaa6bbc105cd04caa5eb0cdb384d92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonNumber: 5
 --- !u!114 &1508517322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4422,26 +4421,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1662017191}
-        m_TargetAssemblyTypeName: ItemManager, Assembly-CSharp
-        m_MethodName: OnButtonPress
-        m_Mode: 1
+      - m_Target: {fileID: 1508517321}
+        m_TargetAssemblyTypeName: SceneManagment, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1700830485}
-        m_TargetAssemblyTypeName: ItemManager, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -4731,7 +4718,7 @@ GameObject:
   - component: {fileID: 1553195817}
   m_Layer: 5
   m_Name: ArmourImage
-  m_TagString: Untagged
+  m_TagString: armour
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4752,8 +4739,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.1526, y: 25.6223}
-  m_SizeDelta: {x: 104.3053, y: 110.2447}
+  m_AnchoredPosition: {x: -39.216053, y: 37.15593}
+  m_SizeDelta: {x: 178.5613, y: 160.9467}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1553195817
 MonoBehaviour:
@@ -4885,7 +4872,7 @@ GameObject:
   - component: {fileID: 1607067984}
   m_Layer: 5
   m_Name: BootsImage
-  m_TagString: Untagged
+  m_TagString: boots
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4906,8 +4893,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.4998169, y: -121.049515}
-  m_SizeDelta: {x: 90.892, y: 28.6482}
+  m_AnchoredPosition: {x: -40.333557, y: -176.97084}
+  m_SizeDelta: {x: 155.5989, y: 41.8236}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1607067984
 MonoBehaviour:
@@ -5110,18 +5097,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   helmetIcon: {fileID: 1414614775}
   torsoIcon: {fileID: 1553195817}
-  glovesIcon: {fileID: 0}
   leggingsIcon: {fileID: 575025688}
   bootsIcon: {fileID: 1607067984}
   weaponIcon: {fileID: 856912594}
   shieldIcon: {fileID: 1409327034}
   ringIcon: {fileID: 1696321811}
-  imageContainers:
-  - {fileID: 1923595970}
-  - {fileID: 295708054}
-  - {fileID: 1964372961}
-  - {fileID: 1745668114}
-  inventoryPanel: {fileID: 899750718}
+  itemSO: {fileID: 0}
 --- !u!114 &1662017192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5172,24 +5153,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14b0f12c0ce0f6c4688d43e3d6473060, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventoryLinePrefab: {fileID: 4747151860364667943, guid: 94ab043403a38d841b5bbab4425c81c8, type: 3}
   itemHolderPrefab: {fileID: 5975924590368074784, guid: 556942a7db10efb46ae7466ef24ee26c, type: 3}
   myContainer: {fileID: 198078879}
   itemsOb: {fileID: 1700830485}
-  itemsSo:
-  - {fileID: 11400000, guid: 74be7df1dffb5324086f420eef6a2432, type: 2}
-  - {fileID: 11400000, guid: 660c05347ce0d8b46947d30b04ea6c19, type: 2}
-  - {fileID: 11400000, guid: bdb39598f6da9944a8c3ba8353140adf, type: 2}
-  - {fileID: 11400000, guid: 5fddd1375067bbb42b79a63ccffc8076, type: 2}
-  - {fileID: 11400000, guid: 5fddd1375067bbb42b79a63ccffc8076, type: 2}
-  - {fileID: 11400000, guid: 5fddd1375067bbb42b79a63ccffc8076, type: 2}
-  - {fileID: 11400000, guid: 5fddd1375067bbb42b79a63ccffc8076, type: 2}
-  - {fileID: 11400000, guid: 5fddd1375067bbb42b79a63ccffc8076, type: 2}
-  imageContainers:
-  - {fileID: 1923595970}
-  - {fileID: 295708054}
-  - {fileID: 1964372961}
-  - {fileID: 1745668114}
 --- !u!1 &1680262413
 GameObject:
   m_ObjectHideFlags: 0
@@ -5358,7 +5324,7 @@ GameObject:
   - component: {fileID: 1696321811}
   m_Layer: 5
   m_Name: RingImage
-  m_TagString: Untagged
+  m_TagString: ring
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5379,8 +5345,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 14.9635, y: -4.3354}
-  m_SizeDelta: {x: 1.9313, y: 3.432}
+  m_AnchoredPosition: {x: -17.284927, y: -6.579418}
+  m_SizeDelta: {x: 3.3062, y: 5.0104}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1696321811
 MonoBehaviour:
