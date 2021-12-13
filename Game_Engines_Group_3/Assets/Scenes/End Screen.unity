@@ -218,6 +218,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CharacterImage Final
       objectReference: {fileID: 0}
+    - target: {fileID: 3413325915897036154, guid: 7be6d188f030e544ea132ffc87f95e2b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7be6d188f030e544ea132ffc87f95e2b, type: 3}
 --- !u!1 &452978918
