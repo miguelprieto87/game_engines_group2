@@ -5,9 +5,14 @@ using UnityEngine;
 public class AudioPlay : MonoBehaviour
 {
 
-    public void PlaySound(AudioSource audioSource) 
+    public void PlaySoundInventory() 
     {
-        AudioManager.instance.PlaySound(audioSource);        
+        ButtonAudioManager.instance.PlayAudio1();        
+    }
+
+    public void PlaySoundMenu()
+    {
+        ButtonAudioManager.instance.PlayAudio2();
     }
 
 }
