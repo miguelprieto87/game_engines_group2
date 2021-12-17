@@ -12,6 +12,9 @@ public class ButtonAudioManager : MonoBehaviour
     public AudioClip SFX2;
     public AudioSource audioSound2;
 
+    public AudioClip SFX3;
+    public AudioSource audioSound3;
+
     private void Awake()
     {
         // if the game manager instance does not exists
@@ -39,5 +42,11 @@ public class ButtonAudioManager : MonoBehaviour
     {
         audioSound2.clip = SFX2;
         audioSound2.Play();
+    }
+
+    public void PlayAudio3()
+    {
+        audioSound3.clip = SFX3;
+        audioSound3.Play();
     }
 }

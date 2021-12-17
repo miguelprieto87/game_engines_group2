@@ -15,4 +15,9 @@ public class AudioPlay : MonoBehaviour
         ButtonAudioManager.instance.PlayAudio2();
     }
 
+    public void PlaySoundEquip()
+    {
+        ButtonAudioManager.instance.PlayAudio3();
+    }
+
 }
