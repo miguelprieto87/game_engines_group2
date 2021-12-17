@@ -140,7 +140,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3413325915897036153, guid: 7be6d188f030e544ea132ffc87f95e2b, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3413325915897036153, guid: 7be6d188f030e544ea132ffc87f95e2b, type: 3}
       propertyPath: m_AnchorMax.x
@@ -705,8 +705,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 777251000}
         m_TargetAssemblyTypeName: SceneManagement, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 3
+        m_MethodName: QuitGame
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -808,7 +808,7 @@ RectTransform:
   - {fileID: 735295762}
   - {fileID: 777250996}
   m_Father: {fileID: 1658931275}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1035,7 +1035,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Quit To Menu
+  m_Text: Exit
 --- !u!222 &1587421166
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1150,8 +1150,8 @@ RectTransform:
   - {fileID: 1393967046}
   - {fileID: 452978919}
   - {fileID: 650668596}
-  - {fileID: 912133515}
   - {fileID: 883427697}
+  - {fileID: 912133515}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
